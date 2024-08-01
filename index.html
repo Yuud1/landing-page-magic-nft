@@ -9,13 +9,14 @@
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/componentes/header.css">
     <link rel="stylesheet" href="style/componentes/hero.css">
+    <link rel="stylesheet" href="style/componentes/info.css">
     <title>NFT</title>
 </head>
 <body>
     <div class="bg">
     <header class="header">
         <span class="header_logo">MagicNFT</span>
-        <nav>
+        <nav class="header_nav">
             <ul class="nav_ul">
                 <li class="nav_li"><a class="nav_a" href="">NFT</a>
                 <li class="nav_li"><a class="nav_a" href="">Sobre nós</a>
@@ -24,11 +25,16 @@
                 </li>
             </ul>
         </nav>
+        <button class="header_icon-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="header_icon">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
+        </button>
     </header>
     <section class="hero">
         <div class="hero_left">
             <span class="hero_up-text">Jogue e colete NFT</span>
-            <h1 class="hero_tittle">Bem-vindo ao mundo mágico das NFTs</h1>
+            <h1 class="hero_title">Bem-vindo ao mundo mágico das NFTs</h1>
             <h2 class="hero_description">Descubra mais de 200 artes únicas, desbloqueie habilidades mágicas, e combine monstros capturados nas dungeons</h2>
             <button class="hero_btn">Descubra</button>
         </div>
@@ -37,5 +43,39 @@
         </div>
     </section>
     </div>
+
+    <section class="info">
+        <div class="line"></div>
+        <div class="itens-wrapper">
+            <div class="item">
+                <div class="item_title">1M+</div>
+                <div class="item_description">Clientes ativos</div>
+            </div>
+            <div class="item">
+                <div class="item_title">$115M</div>
+                <div class="item_description">Já ganhos</div>
+            </div>
+            <div class="item">
+                <div class="item_title">4.8+</div>
+                <div class="item_description">Avaliação média</div>
+            </div>
+            <div class="item">
+                <div class="item_title">200+</div>
+                <div class="item_description">Coleções</div>
+            </div>
+        </div>
+
+        <div class="info-wrapper">
+            <div class="info_left">
+                <img src="images/section-game-img.png" alt="">
+            </div>
+            <div class="info_right">
+                <div class="section_up_text">Conceito base</div>
+                <div class="section_title">Jogo de coleta NFT e autobatalha</div>
+                <div class="section_description">Explore um universo repleto de aventuras neste jogo de coleta NFT e autobatalha. Capture criaturas únicas, treine suas habilidades e enfrente desafios épicos. Cada batalha vencida revela novos tesouros, aprimora sua coleção e solidifica seu lugar como um mestre neste mundo mágico de NFTs</div>
+                <button class="section_btn">Descubra</button>
+            </div>
+        </div>
+    </section>
 </body>
 </html>

@@ -24,3 +24,21 @@
     text-decoration: none;
 
 }
+
+.header_icon-btn {
+    display: none;
+}
+
+.header_icon {
+    width: 1.75rem;
+    height: 1.75rem;
+}
+
+@media (width < 768px) {
+    .header_nav {
+        display: none;
+    }
+    .header_icon-btn {
+        display: block;
+    }
+}
