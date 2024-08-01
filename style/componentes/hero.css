@@ -1,0 +1,56 @@
+.bg {
+    background: linear-gradient(150deg, rgba(172, 60, 246, 0.3), #06061a)
+}
+
+.hero {
+    display: flex;
+    padding-inline: 1.25rem;
+    padding-top: 6rem;
+    overflow: hidden;
+    max-width: 1280px;
+    margin-inline: auto;
+}
+
+.hero_left {
+    flex: 1;
+}
+
+.hero_right {
+    flex: 1;
+}
+
+.hero_up-text {
+    color: #2eb1a3;
+    text-transform: uppercase;
+    font-weight: 600
+}
+
+.hero_tittle {
+    font-size: 3rem;
+    line-height: 1.1;
+    font-weight: 500;
+    letter-spacing: -0.05em;
+    margin-top: 0.6rem;
+}
+
+.hero_description {
+    font-size: 0.9rem;
+    opacity: 0.6;
+    font-weight: 300;
+    line-height: calc(1em + 0.5rem);
+    margin-block: 1.5rem;
+    max-width: 56ch;
+}
+
+.hero_btn {
+    background: linear-gradient(to right, #E8546B, #ac3cf6);
+    padding: 0.5em 2em;
+    border-radius: 6px;
+    color: #000;
+}
+/* HERO RIGHT*/
+
+.hero_img {
+    transform: rotate(5deg);
+    max-width: 550px;
+}

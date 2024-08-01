@@ -1,0 +1,26 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 1.25rem;
+    padding-block: 1.25rem;
+    align-items: center;
+    max-width: 1366px;
+    margin-inline: auto;
+}
+
+.header_logo {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.nav_ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav_a {
+    color: inherit;
+    text-decoration: none;
+
+}
