@@ -55,6 +55,11 @@
     flex: 1;
 }
 
+.info_right-montanha {
+    max-width: 450px;
+    margin-left: 90px;
+}
+
 .section_up_text {
     color: #2eb1a3;
     text-transform: uppercase;
@@ -79,3 +84,106 @@
     border-radius: 6px;
     color: #000;
 }
+
+/* ANIMAÇÃO BUTTON */
+.btn-saiba-mais {
+    background: none;
+    border: 2px solid #2eb1a3; 
+    color: #2eb1a3; 
+    padding: 0.5em 1.5em;
+    border-radius: 30px; 
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.btn-saiba-mais::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #2eb1a3;
+    z-index: -1;
+    transition: transform 0.3s ease;
+    transform: scaleX(0);
+    transform-origin: right;
+}
+
+/* Efeito de hover */
+.btn-saiba-mais:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.btn-saiba-mais:hover {
+    color: #fff; 
+    border-color: transparent; 
+}
+
+.btn-saiba-mais:hover {
+    padding: 0.5em 1.5em;
+    border: none;
+}
+
+/*RESPOENSIVIDADE*/
+
+@media (width < 1024px) {
+    .info-wrapper {
+        flex-direction: column;
+    }
+    .section_description {
+        max-width: 60ch;
+    }
+
+    .info_right-montanha {
+        margin: 0;
+        width: 90%;
+        max-width: 350;
+        margin-inline: auto;
+    }
+}
+
+@media (width < 475px) {
+    .section_title {
+        font-size: 2rem;
+    }
+}
+
+/* Reverte a ordem para esta seção específica */
+.invert-layout {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 4rem;
+    flex-direction: row; 
+}
+
+@media (max-width: 1024px) {
+    .invert-layout {
+        flex-direction: column-reverse; /* Inverte a ordem somente nesta seção */
+    }
+}
+
+.invert-layout .info_left img {
+    width: 100%;
+    max-width: 500px;
+    margin-inline: auto;
+}
+
+@media (max-width: 475px) {
+    .invert-layout .section_title {
+        font-size: 2rem;
+    }
+}
+
+
+
+
+
